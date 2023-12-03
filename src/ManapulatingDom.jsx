@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Input from "./Input";
 
 const ManapulatingDom = () => {
   const inputRef = useRef();
@@ -10,7 +11,7 @@ const ManapulatingDom = () => {
   };
   return (
     <div>
-      <input type="text" ref={inputRef} />
+      <Input ref={inputRef} />
       <button onClick={handleFocusOnInput}>Focus on input</button>
     </div>
   );
